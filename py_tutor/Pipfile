@@ -25,6 +25,9 @@ sanic = {extras = ["ext"], version = "*"}
 uvicorn = {extras = ["standard"], version = "*"}
 apscheduler = "*"
 flask = "*"
+retry = "*"
+pythonping = "*"
+requests-html = "*"
 
 [dev-packages]
 

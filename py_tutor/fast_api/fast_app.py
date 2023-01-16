@@ -21,24 +21,22 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
 app = FastAPI()
 app.add_middleware(
-        CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=True,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # 路由挂载
 app.include_router(user_router, prefix='/user', tags=['检索词联想', ])
 app.include_router(list_router, prefix='/list', tags=['列表', ])
 app.include_router(fun_router, prefix='/fun', tags=['函数', ])
-port = 8900
+port = 9600
 
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World","code":1}
-
-
+    return {"message": "Hello World", "code": 1}
 
 
 @app.on_event('startup')
@@ -66,4 +64,4 @@ if __name__ == '__main__':
     # 第一个参数 "main:app" 就表示这个含义
     # 然后是 host 和 port 表示监听的 ip 和端口
     print(f"http://localhost:{port}/docs")
-    uvicorn.run("main_app:app", host="0.0.0.0", port=port, reload=True,reload_delay=0.1)
+    uvicorn.run("fast_app:app", host="0.0.0.0", port=port, reload=True, reload_delay=0.1)
