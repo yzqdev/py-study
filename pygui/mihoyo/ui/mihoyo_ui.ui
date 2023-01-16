@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1112</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>米哈游爬虫</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>1041</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>爬取首页</string>
+   </property>
+   <widget class="QTextEdit" name="diskTextEdit">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>26</y>
+      <width>741</width>
+      <height>41</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="diskLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>51</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下载目录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectFolderPushButton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>50</y>
+      <width>81</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择文件夹</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="homeTextBrowser">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>80</y>
+      <width>741</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="homePushButton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>210</y>
+      <width>81</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始爬取</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="diskLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>41</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状态</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="tongrenBtn">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>同人图</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="singleCosBtn">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>30</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单人cos图</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="singleTongrenBtn">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>30</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>单人同人图</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="style.qrc"/>
+ </resources>
+ <connections/>
+</ui>

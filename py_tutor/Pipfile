@@ -1,0 +1,32 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+httpx = "*"
+fastapi = "*"
+pymysql = "*"
+jieba = "*"
+xlwt = "*"
+xlrd = "*"
+xlutils = "*"
+python-docx = "*"
+pypiwin32 = "*"
+requests = "*"
+pymongo = "*"
+sqlalchemy = "*"
+psycopg2 = "*"
+sqlalchemy-utils = "*"
+colorama = "*"
+random-word = "*"
+faker = "*"
+sanic = {extras = ["ext"], version = "*"}
+uvicorn = {extras = ["standard"], version = "*"}
+apscheduler = "*"
+flask = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
