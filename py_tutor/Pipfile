@@ -28,6 +28,12 @@ flask = "*"
 retry = "*"
 pythonping = "*"
 requests-html = "*"
+flask-swagger-ui = "*"
+flask-restx = "*"
+flask-siwadoc = "*"
+flasgger = "*"
+marshmallow = "*"
+apispec = "*"
 
 [dev-packages]
 

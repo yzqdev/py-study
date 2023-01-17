@@ -10,12 +10,11 @@
 """
 from flask import Blueprint
 
+
+
 cat = Blueprint('cat', __name__)
 
 
 @cat.route('/name')
 def index():
     return 'Hello, cat!'
-
-
-
