@@ -15,6 +15,8 @@ import httpx
 from PySide6.QtCore import Slot
 from PySide6.QtGui import QTextCursor
 from PySide6.QtWidgets import QMainWindow, QFileDialog, QMessageBox
+
+from mihoyo.constant import headers
 # from qt_material import apply_stylesheet
 
 from mihoyo.style_constant import extra
@@ -32,9 +34,9 @@ class SingleCosPage(QMainWindow, Ui_SingleCosWindow):
         self.user_id_list = []
         self.file_directory = "d:/images/mihoyo/single_cos/"
         # apply_stylesheet(self, theme='light_cyan.xml',extra=extra)
-        with open("mihoyo/ui/main.qss", "r") as f:
-            _style = f.read()
-            self.setStyleSheet(_style)
+        # with open("mihoyo/ui/main.qss", "r") as f:
+        #     _style = f.read()
+        #     self.setStyleSheet(_style)
         self.setupUi(self)
         self.keywordLineEdit.setText("河野")
         self.diskLineEdit.setText(self.file_directory)
@@ -57,11 +59,13 @@ class SingleCosPage(QMainWindow, Ui_SingleCosWindow):
 
     @Slot()
     def on_searchBtn_clicked(self):
-
+        print("点击搜索")
         search_url = f"https://bbs-api.mihoyo.com/user/wapi/searchUser?gids=2&keyword={self.keywordLineEdit.text()}&size=20"
-        headers = {'User-Agent': get_ua()}
+
         response = httpx.get(search_url, headers=headers)
         if len(self.keywordLineEdit.text()) != 0:
+            print(response.status_code)
+            print(response.text)
             if response.status_code == 200:
                 _json = json.loads(response.text)
 
