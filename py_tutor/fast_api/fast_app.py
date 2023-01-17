@@ -64,4 +64,4 @@ if __name__ == '__main__':
     # 第一个参数 "main:app" 就表示这个含义
     # 然后是 host 和 port 表示监听的 ip 和端口
     print(f"http://localhost:{port}/docs")
-    uvicorn.run("fast_app:app", host="0.0.0.0", port=port, reload=True, reload_delay=0.1)
+    uvicorn.run("fast_app:app", host="0.0.0.0", port=port )

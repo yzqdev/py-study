@@ -33,8 +33,9 @@ db = myclient[constants.db_name]
 dblist = myclient.list_database_names()
 
 post_collection: pymongo.collection.Collection = db.post
-def create_user():
 
+
+def create_user():
     users = []
     for i in range(0, 5):
         user = {
@@ -49,6 +50,7 @@ def create_user():
     user_db.insert_many(users)
     pass
 
+
 def remove_duplicate_cos():
     """
     删除重复记录
@@ -58,7 +60,7 @@ def remove_duplicate_cos():
     name_age = zip(name, age)
 
     for name, age in name_age:
-        data =post_collection.find_one({'name': name, 'age': age})  # 根据字段查询记录
+        data = post_collection.find_one({'name': name, 'age': age})  # 根据字段查询记录
         post_collection.delete_many({'name': name, 'age': age})  # 删除所有记录
         post_collection.insert_one(data)  # 重新插入记录
 

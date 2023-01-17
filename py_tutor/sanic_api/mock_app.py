@@ -20,8 +20,8 @@ app.blueprint(bp)
 swagger_ui_configuration = {
         "validatorUrl": None,  # Disable Swagger validator
         "displayRequestDuration": True,
-        "docExpansion": "none",
-    # 或者full
+        "docExpansion": "none",  # 或者full
+
     }
 app.config.SWAGGER_UI_CONFIGURATION = swagger_ui_configuration
 app.config.OAS_UI_DEFAULT="swagger"

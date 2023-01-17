@@ -34,6 +34,8 @@ flask-siwadoc = "*"
 flasgger = "*"
 marshmallow = "*"
 apispec = "*"
+pytest = "*"
+pydantic = "==1.10.4"
 
 [dev-packages]
 

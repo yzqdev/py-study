@@ -14,7 +14,7 @@ from flask import Blueprint, Flask, jsonify
 
 from flasgger import Swagger
 from flasgger.utils import swag_from
-
+port=7900
 app = Flask(__name__)
 
 example_blueprint = Blueprint("example_blueprint", __name__)
@@ -71,4 +71,5 @@ app.register_blueprint(example_blueprint)
 swag = Swagger(app)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    print(f"文档地址=>http://localhost:{port}/apidocs/index.html ")
+    app.run(port=port,debug=True)
