@@ -12,13 +12,12 @@ import datetime
 import uuid
 from typing import Any
 
-from sqlalchemy import create_engine, Column, String, Date, DateTime, Integer, Float, Boolean, DECIMAL, Enum, Time, \
-    Text, ForeignKey
+from sqlalchemy import (DECIMAL, Boolean, Column, Date, DateTime, Enum, Float,
+                        ForeignKey, Integer, String, Text, Time, create_engine)
 from sqlalchemy.dialects.mysql import LONGTEXT
 from sqlalchemy.orm import declarative_base, sessionmaker
-
 # 方法一， 利用sqlalchemy_utils库的create_databse模块
-from sqlalchemy_utils import database_exists, create_database, UUIDType
+from sqlalchemy_utils import UUIDType, create_database, database_exists
 
 # 创建对象的基类:
 

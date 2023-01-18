@@ -2,7 +2,6 @@
 import json
 
 
-
 def stringToIntegerList(input):
     return json.loads(input)
 
@@ -14,8 +13,8 @@ def integer_list_to_string(nums, len_of_list=None):
 
 
 def main():
-    import sys
     import io
+    import sys
     def readlines():
         for line in io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8'):
             yield line.strip('\n')

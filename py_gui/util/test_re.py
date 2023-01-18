@@ -1,10 +1,11 @@
 # coding:utf8
 # 参考：https://www.jianshu.com/p/6ca1344a09db
-import re
-import requests
 import random
-from zlib import crc32
+import re
 from base64 import b64decode
+from zlib import crc32
+
+import requests
 
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTHL, like Gecko) Chrome/66.0.3359.181 Safari/537.36",

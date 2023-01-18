@@ -12,13 +12,14 @@ from flasgger import APISpec, Swagger
 from flask import Flask, jsonify
 from flask_restx import Api
 
+from flask_api.controller.cat_controller import cat
+from flask_api.flask_app import app, siwa
+
 # from flask_siwadoc import SiwaDoc
 
 
 # from flask_swagger_ui import get_swaggerui_blueprint
 
-from flask_api.controller.cat_controller import cat
-from flask_api.flask_app import app, siwa
 
 port = 4500
 

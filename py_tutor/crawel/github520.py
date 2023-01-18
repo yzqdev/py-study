@@ -5,12 +5,11 @@
 #   E-mail  :   595666367@qq.com
 #   Date    :   2020-05-19 15:27
 #   Desc    :   获取最新的 GitHub 相关域名对应 IP
+import json
 import os
 import re
-import json
+from datetime import datetime, timedelta, timezone
 from typing import Any, Optional
-
-from datetime import datetime, timezone, timedelta
 
 from pythonping import ping
 from requests_html import HTMLSession

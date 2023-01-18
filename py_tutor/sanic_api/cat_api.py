@@ -10,7 +10,7 @@
 """
 from uuid import UUID
 
-from sanic import text, json, Blueprint
+from sanic import Blueprint, json, text
 
 bp = Blueprint("cat")
 

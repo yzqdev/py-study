@@ -6,10 +6,12 @@ File    : landing.py
 Time    : 2019-01-08 14:19
 Software: PyCharm
 '''
-from PySide6 import QtWidgets
-from PySide6.QtCore import Signal, QPropertyAnimation, QAbstractAnimation, QPoint
-from resource.Landing_ui import Ui_Form
 import sys
+from resource.Landing_ui import Ui_Form
+
+from PySide6 import QtWidgets
+from PySide6.QtCore import (QAbstractAnimation, QPoint, QPropertyAnimation,
+                            Signal)
 
 
 class LandingPanel(QtWidgets.QWidget, Ui_Form):

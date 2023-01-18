@@ -1,7 +1,8 @@
-import pygame
 import sys
-from pygame.locals import *
 from random import *
+
+import pygame
+from pygame.locals import *
 
 
 # 球类继承自Spirte类

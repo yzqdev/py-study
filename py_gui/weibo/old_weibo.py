@@ -1,11 +1,11 @@
 import json
-import re
 import os
-from tkinter import *
-from tkinter import messagebox
-from tkinter import ttk
-import requests
+import re
 import threading
+from tkinter import *
+from tkinter import messagebox, ttk
+
+import requests
 # pillow库
 from PIL import Image, ImageTk
 

@@ -10,6 +10,8 @@
 """
 
 from util.file_io.read_txt import ReadText
+
+
 def main():
     a=ReadText()
     a.main()

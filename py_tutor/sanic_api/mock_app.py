@@ -9,9 +9,10 @@
 @time: 2023/1/5 13:25
 """
 import os
+
+from colorama import Back, Fore
 from sanic import Sanic
-from sanic.response import text, json
-from colorama import Fore, Back
+from sanic.response import json, text
 
 from sanic_api.cat_api import bp
 

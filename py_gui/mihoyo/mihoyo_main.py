@@ -15,13 +15,13 @@ import sys
 from hashlib import md5
 
 import requests
-from PySide6 import QtWidgets, QtCore
-from PySide6.QtCore import Slot, Qt
-from PySide6.QtGui import QTextCursor, QIcon
+from PySide6 import QtCore, QtWidgets
+from PySide6.QtCore import Qt, Slot
+from PySide6.QtGui import QIcon, QTextCursor
 from PySide6.QtWidgets import QFileDialog, QMessageBox
 
 from mihoyo.ui.mihoyo_ui import Ui_Form
-from  mihoyo.ui.single_cos_page import SingleCosPage
+from mihoyo.ui.single_cos_page import SingleCosPage
 from util.utils import thread_it
 
 headers = {

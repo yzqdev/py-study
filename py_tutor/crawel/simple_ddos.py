@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import socket
-import time
 import threading
+import time
 
 # Pressure Test,ddos tool
 # ---------------------------

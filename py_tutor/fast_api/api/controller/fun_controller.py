@@ -9,6 +9,7 @@
 @time: 2023/1/7 23:56
 """
 from fastapi import APIRouter
+
 from crawel import github520
 
 fun_router = APIRouter()

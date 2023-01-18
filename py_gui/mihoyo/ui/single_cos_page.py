@@ -14,14 +14,15 @@ import os
 import httpx
 from PySide6.QtCore import Slot
 from PySide6.QtGui import QTextCursor
-from PySide6.QtWidgets import QMainWindow, QFileDialog, QMessageBox
+from PySide6.QtWidgets import QFileDialog, QMainWindow, QMessageBox
 
 from mihoyo.constant import headers
-# from qt_material import apply_stylesheet
-
 from mihoyo.style_constant import extra
 from mihoyo.ui.single_cos import Ui_SingleCosWindow
 from util.utils import get_ua, thread_it
+
+# from qt_material import apply_stylesheet
+
 
 
 class SingleCosPage(QMainWindow, Ui_SingleCosWindow):

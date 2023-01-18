@@ -1,5 +1,5 @@
-from tkinter import *
 import math as m
+from tkinter import *
 
 root = Tk()
 

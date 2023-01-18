@@ -1,6 +1,6 @@
-import urllib.request
 import os
 import random
+import urllib.request
 
 
 def url_open(url, proxies=None):

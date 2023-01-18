@@ -1,11 +1,13 @@
+import time
+
 from docx import Document
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from docx.shared import Pt  # 磅数
 from docx.oxml.ns import qn  # 中文格式
 from docx.shared import Inches  # 图片尺寸
+from docx.shared import Pt  # 磅数
+
 # 以上是docx库中需要用到的部分
 from utils.automatic import Automatic
-import time
 
 """
 @Author: yanni

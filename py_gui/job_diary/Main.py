@@ -7,11 +7,12 @@ Time    : 2019-01-11 9:46
 Software: PyCharm
 '''
 
-from PySide6 import QtWidgets
-from Landing_Panel import LandingPanel
-from Joblog_Panel import JoblogPanel
-from Link_MySQL import LinkMySQL
 import sys
+
+from Joblog_Panel import JoblogPanel
+from Landing_Panel import LandingPanel
+from Link_MySQL import LinkMySQL
+from PySide6 import QtWidgets
 
 app = QtWidgets.QApplication([])
 landing = LandingPanel()

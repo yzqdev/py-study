@@ -11,13 +11,14 @@
 
 import pytz
 import uvicorn
+from api.controller.fun_controller import fun_router
+from api.controller.list_controller import list_router
+from api.controller.user_controller import user_router
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from fast_api.api.controller.fun_controller import fun_router
-from fast_api.api.controller.list_controller import list_router
-from fast_api.api.controller.user_controller import user_router
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from fast_api.api.controller.time_controller import time_router
 
 app = FastAPI()
 app.add_middleware(
@@ -31,6 +32,7 @@ app.add_middleware(
 app.include_router(user_router, prefix='/user', tags=['检索词联想', ])
 app.include_router(list_router, prefix='/list', tags=['列表', ])
 app.include_router(fun_router, prefix='/fun', tags=['函数', ])
+app.include_router(time_router, prefix='/time', tags=['日期', ])
 port = 9600
 
 

@@ -8,9 +8,9 @@
 @file: deal_xls.py
 @time: 2019/7/3 13:09
 """
-from xlutils.copy import copy
-import xlwt
 import xlrd
+import xlwt
+from xlutils.copy import copy
 
 
 def createxls():

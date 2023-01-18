@@ -1,5 +1,6 @@
-import pygame
 import sys
+
+import pygame
 
 # 初始化Pygame
 pygame.init()

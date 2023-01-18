@@ -14,13 +14,13 @@ import re
 import sys
 
 import requests
-from PySide6 import QtWidgets, QtCore
+from PySide6 import QtCore, QtWidgets
 from PySide6.QtCore import Slot
-from PySide6.QtGui import QIcon, QTextCursor, QKeyEvent, Qt
-from PySide6.QtWidgets import QMessageBox, QListWidgetItem, QFileDialog
+from PySide6.QtGui import QIcon, QKeyEvent, Qt, QTextCursor
+from PySide6.QtWidgets import QFileDialog, QListWidgetItem, QMessageBox
 
 from util.utils import get_ua, thread_it
-from  weibo.ui.weibo_ui import Ui_Form
+from weibo.ui.weibo_ui import Ui_Form
 
 global select_path
 

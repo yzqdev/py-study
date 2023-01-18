@@ -5,13 +5,13 @@
 # @File    : Parameter_Panel.py
 # @Software: PyCharm
 
-from PySide6 import QtWidgets
-from PySide6.QtWidgets import QInputDialog, QLineEdit, QMessageBox
 import sys
-from PySide6.QtWidgets import QApplication, QListWidget
+from resource.Parameter_ui import Ui_Form
 
 from Link_MySQL import LinkMySQL
-from resource.Parameter_ui import Ui_Form
+from PySide6 import QtWidgets
+from PySide6.QtWidgets import (QApplication, QInputDialog, QLineEdit,
+                               QListWidget, QMessageBox)
 
 
 class ParameterPanel(QtWidgets.QWidget, Ui_Form):

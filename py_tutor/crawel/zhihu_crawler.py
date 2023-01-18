@@ -9,10 +9,11 @@
 @time: 2019/7/20 21:06
 """
 
-import urllib.request
-import requests
 import http.cookiejar
+import urllib.request
+
 import pymongo
+import requests
 
 
 class FirstCraweller:

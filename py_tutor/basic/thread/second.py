@@ -8,9 +8,9 @@
 @file: deal_csv.py
 @time: 2022/7/21 21:15
 """
+import os
 import threading
 import time
-import os
 
 total = 1000
 folder = 'e:/tmp/py'

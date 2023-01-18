@@ -9,8 +9,9 @@
 @time: 2019/4/17 14:19
 """
 
-import tkinter as tk
 import random
+import tkinter as tk
+
 MAZE_H=500
 MAZE_W=500
 root = tk.Tk()

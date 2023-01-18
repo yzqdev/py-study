@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-from PySide6 import QtCore, QtGui,QtWidgets
+import sys
 
 from dialog1 import Dialog1
 from dialog2 import Dialog2
-import sys
+from PySide6 import QtCore, QtGui, QtWidgets
 
 try:
     _fromUtf8 = QtCore.QString.fromUtf8

@@ -8,9 +8,10 @@
 @time: 2022/6/14 17:36
 """
 
-import sys
 import random
-from PySide6 import QtCore, QtWidgets, QtGui
+import sys
+
+from PySide6 import QtCore, QtGui, QtWidgets
 
 
 class MyWidget(QtWidgets.QWidget):

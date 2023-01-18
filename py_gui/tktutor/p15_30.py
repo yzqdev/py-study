@@ -1,5 +1,5 @@
-from tkinter import *
 import hashlib
+from tkinter import *
 
 root = Tk()
 

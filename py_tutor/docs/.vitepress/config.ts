@@ -26,11 +26,11 @@ outDir:"dist",
         nav: navbar,
 
         sidebar: sidebar,
-        socialLinks: [{ icon: "github", link: "https://github.com/yzqdev/pygui" }],
-        editLink: {
-            pattern: "https://github.com/yzqdev/pygui/edit/main/docs/:path",
-            text: "Edit this page on GitHub",
-        },
+        socialLinks: [{ icon: "github", link: "https://github.com/yzqdev/py-study/py_tutor" }],
+        // editLink: {
+        //     pattern: "https://github.com/yzqdev/pygui/edit/main/docs/:path",
+        //     text: "Edit this page on GitHub",
+        // },
         footer: {
             message: "Released under the MIT License.",
             copyright: "Copyright © 2019-present yzqdev",

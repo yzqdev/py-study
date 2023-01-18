@@ -1,5 +1,5 @@
-from tkinter import *
 import webbrowser
+from tkinter import *
 
 root = Tk()
 

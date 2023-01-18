@@ -9,8 +9,9 @@
 @time: 2022/1/30 0:31
 """
 import os
-import threading, zipfile
+import threading
 import time
+import zipfile
 
 
 class AsyncZip(threading.Thread):

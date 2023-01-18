@@ -10,10 +10,10 @@
 """
 
 
-from flask import Blueprint, Flask, jsonify
-
 from flasgger import Swagger
 from flasgger.utils import swag_from
+from flask import Blueprint, Flask, jsonify
+
 port=7900
 app = Flask(__name__)
 

@@ -8,7 +8,7 @@
 @file: deal_xls.py
 @time: 2023/1/2 12:26
 """
-from colorama import Fore, Back
+from colorama import Back, Fore
 
 
 def main():

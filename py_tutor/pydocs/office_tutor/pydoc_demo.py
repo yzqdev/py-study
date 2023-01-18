@@ -8,14 +8,15 @@
 @file: pydocxdemo.py
 @time: 2019/7/4 0:01
 """
-from docx import Document
-from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
-from docx.shared import Pt  # 磅数
-from docx.oxml.ns import qn  # 中文格式
-from docx.shared import Inches  # 图片尺寸
 import datetime
 import os
 import time
+
+from docx import Document
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+from docx.oxml.ns import qn  # 中文格式
+from docx.shared import Inches  # 图片尺寸
+from docx.shared import Pt  # 磅数
 
 
 def doc_file():

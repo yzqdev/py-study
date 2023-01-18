@@ -13,15 +13,16 @@ import pprint
 import random
 import uuid
 
-from sqlalchemy import create_engine, Column, String, Date
-from sqlalchemy.orm import declarative_base, sessionmaker
-
-# 方法一， 利用sqlalchemy_utils库的create_databse模块
-from sqlalchemy_utils import database_exists, create_database, UUIDType
 from colorama import Fore
-from database.db import Base, engine, session_local, User, Employees, Artile, GrainData, Company
-from database.util import random_username, rand_int, rand_length
 from faker import Faker
+from sqlalchemy import Column, Date, String, create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker
+# 方法一， 利用sqlalchemy_utils库的create_databse模块
+from sqlalchemy_utils import UUIDType, create_database, database_exists
+
+from database.db import (Artile, Base, Company, Employees, GrainData, User,
+                         engine, session_local)
+from database.util import rand_int, rand_length, random_username
 
 # Base.metadata.drop_all(engine)
 fake = Faker()

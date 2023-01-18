@@ -1,9 +1,10 @@
 # -*- coding: UTF8 -*-
+import sys
+
+from child import Ui_Dialog
+from parent import Ui_MainWindow
 from PySide6 import QtWidgets
 
-from parent import Ui_MainWindow
-from child import Ui_Dialog
-import sys
 
 class MainClass(QtWidgets.QMainWindow):
     def __init__(self, parent=None):

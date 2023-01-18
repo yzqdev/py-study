@@ -4,15 +4,14 @@
 # @Author  : Muzi_Li
 # @File    : Query_Panel.py
 # @Software: PyCharm
-import sys
-
-import PySide6
-from PySide6.QtWidgets import QTableWidgetItem, QMessageBox, QApplication
-
-from resource.Query_ui import Ui_Form
-from Link_MySQL import LinkMySQL
 import csv
 import datetime
+import sys
+from resource.Query_ui import Ui_Form
+
+import PySide6
+from Link_MySQL import LinkMySQL
+from PySide6.QtWidgets import QApplication, QMessageBox, QTableWidgetItem
 
 
 class QueryPanel(PySide6.QtWidgets.QWidget, Ui_Form):

@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 # 导入tkinter模块的所有内容
 
 def callback():

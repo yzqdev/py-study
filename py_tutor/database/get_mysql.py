@@ -10,13 +10,14 @@
 """
 from typing import Any
 
+from colorama import Back, Fore
 from faker import Faker
 # 导入:
 from sqlalchemy import Column, String, create_engine
-from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from colorama import Fore, Back
-from database import db, constants
+from sqlalchemy.orm import sessionmaker
+
+from database import constants, db
 from database.db import Base
 from database.util import random_username
 

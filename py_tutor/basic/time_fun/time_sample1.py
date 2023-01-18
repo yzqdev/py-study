@@ -1,18 +1,20 @@
-
+#!/usr/bin/python
 # -*-coding:utf-8-*-
 
 """
 @Author: YangZhengqian
 @contact: xx@xx.com
 @software: PyCharm
-@file: run_script.py
-@time: 2022/1/28 16:49
+@file: time_sample1.py
+@time: 2023/1/18 12:29
 """
-import os
-import sys
 
 
 def main():
-    os.system("pyside6-uic weibo_ui.ui -o weibo_ui.py")
+    import time
+
+    print(f'当前时间的时间戳: {time.time()}')
+
+
 if __name__ == "__main__":
     main()

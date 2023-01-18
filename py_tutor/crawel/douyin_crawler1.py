@@ -6,8 +6,9 @@
 # "https://www.iesdouyin.com/web/api/v2/aweme/iteminfo/?
 #     item_ids="+item_ids[0]+"&dytk="+dytk[0]
 
-import requests
 import re
+
+import requests
 
 # 设置浏览器代理，一定要是移动设备，安卓/iOS均可
 headers = {

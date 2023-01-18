@@ -10,10 +10,9 @@
 """
 import random
 
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy import Boolean, Column, Integer, String, create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Boolean,Column,Integer,String
+from sqlalchemy.orm import sessionmaker
 
 from database.util import random_username
 

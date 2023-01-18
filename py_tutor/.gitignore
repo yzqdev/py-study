@@ -1,7 +1,23 @@
 # Created by .ignore support plugin (hsz.mobi)
-### Example user template template
-### Example user template
-
+### vitepress
+	/src/client/shared.ts
+/src/node/shared.ts
+*.log
+*.tgz
+.DS_Store
+.idea
+.temp
+.vite_opt_cache
+.vscode
+dist
+cache
+examples-temp
+node_modules
+pnpm-global
+TODOs.md
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
 ### Python template
 # user files
 *.db

@@ -1,4 +1,6 @@
-import time, threading
+import threading
+import time
+
 
 # 新线程执行的代码:
 def loop():

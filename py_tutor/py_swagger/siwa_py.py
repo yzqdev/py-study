@@ -9,11 +9,11 @@
 @time: 2023/1/17 12:24
 """
 
-from flask import Flask, Blueprint
+from flask import Blueprint, Flask
 from flask_siwadoc import SiwaDoc
 
-from py_swagger.siwa_constants import app, siwa
 from py_swagger.controller.cat_controller import cats
+from py_swagger.siwa_constants import app, siwa
 
 port = 7800
 

@@ -10,11 +10,8 @@
 """
 import uuid
 
-from sqlalchemy import create_engine, Column, String,Date
-from sqlalchemy.orm import declarative_base, sessionmaker
-
-# 方法一， 利用sqlalchemy_utils库的create_databse模块
-from sqlalchemy_utils import database_exists, create_database, UUIDType
-
 from db import Base
-
+from sqlalchemy import Column, Date, String, create_engine
+from sqlalchemy.orm import declarative_base, sessionmaker
+# 方法一， 利用sqlalchemy_utils库的create_databse模块
+from sqlalchemy_utils import UUIDType, create_database, database_exists

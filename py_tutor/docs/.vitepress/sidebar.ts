@@ -8,6 +8,7 @@ export const sidebar: DefaultTheme.Sidebar = {
             collapsible: true,
             items: [
                 { text: "首页", link: "/guide/index" },
+                { text: "pipenv", link: "/guide/pipenv" },
                 { text: "pyinstaller", link: "/guide/pyinstaller" },
                 { text: "nuitka", link: "/guide/nuitka" },
                 { text: "pysider", link: "/guide/pysider" },

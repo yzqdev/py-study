@@ -1,5 +1,6 @@
-import pygame
 from random import *
+
+import pygame
 
 
 class Bullet_Supply(pygame.sprite.Sprite):

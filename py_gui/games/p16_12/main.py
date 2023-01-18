@@ -1,13 +1,14 @@
 # main.py
-import pygame
 import sys
 import traceback
-import myplane
+from random import *
+
 import bullet
 import enemy
+import myplane
+import pygame
 import supply
 from pygame.locals import *
-from random import *
 
 pygame.init()
 pygame.mixer.init()

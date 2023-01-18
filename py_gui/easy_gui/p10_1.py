@@ -1,5 +1,6 @@
-import easygui as g
 import sys
+
+import easygui as g
 
 
 def start_game():

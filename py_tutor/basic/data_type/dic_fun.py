@@ -9,7 +9,9 @@
 @time: 2023/1/8 13:48
 """
 
-from colorama import Fore,Back
+from colorama import Back, Fore
+
+
 def main():
     user_0 = {
         'username': 'efermi',

@@ -7,10 +7,12 @@
 @file: class3.py
 @time: 2019/7/4 14:26
 """
-import httpx
 import json
 import ssl
+
 import certifi
+import httpx
+
 context=ssl._create_unverified_context()
 def drink():
     print('Energy!')

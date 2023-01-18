@@ -4,14 +4,14 @@
 # @Author  : Muzi_Li
 # @File    : Joblog_Panel.py
 # @Software: PyCharm
+from resource.Joblog_ui import Ui_Form
+
+from Link_MySQL import LinkMySQL
+from Parameter_Panel import ParameterPanel
 from PySide6 import QtWidgets
 from PySide6.QtCore import QDate
 from PySide6.QtWidgets import QTableWidgetItem
-
-from resource.Joblog_ui import Ui_Form
-from Link_MySQL import LinkMySQL
 from Query_Panel import QueryPanel
-from Parameter_Panel import ParameterPanel
 
 
 class JoblogPanel(QtWidgets.QWidget, Ui_Form):
@@ -161,6 +161,7 @@ class JoblogPanel(QtWidgets.QWidget, Ui_Form):
 
 if __name__ == '__main__':
     import sys
+
     from PySide6.Qt import QApplication
 
     app = QApplication(sys.argv)

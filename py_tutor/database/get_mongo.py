@@ -15,10 +15,10 @@ import uuid
 
 import bson
 import pymongo
-from colorama import Fore, Back, Style
 import util
-from random_word import RandomWords
+from colorama import Back, Fore, Style
 from faker import Faker
+from random_word import RandomWords
 
 from database import constants
 
