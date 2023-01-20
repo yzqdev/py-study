@@ -9,7 +9,6 @@
 @time: 2019/7/20 21:06
 """
 
-import http.cookiejar
 import urllib.request
 
 import pymongo
@@ -86,4 +85,5 @@ class FirstCraweller:
 
 
 if __name__ == "__main__":
-    zhihu()
+    crawler = FirstCraweller()
+    crawler.zhihu()

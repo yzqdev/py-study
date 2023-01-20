@@ -38,4 +38,4 @@ menubar.add_cascade(label="编辑", menu=editmenu)
 root.config(menu=menubar)
 
 if __name__ == '__main__':
-    mainloop()
+    root.mainloop()

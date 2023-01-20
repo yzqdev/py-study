@@ -10,16 +10,19 @@
 import json
 import ssl
 
-import certifi
 import httpx
 
-context=ssl._create_unverified_context()
+context = ssl._create_unverified_context()
+
+
 def drink():
     print('Energy!')
+
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36'
 }
+
 
 class CocaCola:
     formula = ['caffeine', 'sugar', 'water', 'soda']
@@ -32,7 +35,7 @@ def main():
 
     # 执行API调用并存储响应
     url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
-    r = httpx.get(url, headers=headers,verify=False)
+    r = httpx.get(url, headers=headers, verify=False)
     print("Status code:", r.status_code)
     # 将API响应存储在一个变量中
     response_dict = r.json()

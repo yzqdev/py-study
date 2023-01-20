@@ -6,7 +6,7 @@ root = Tk()
 def create():
     top = Toplevel()
     top.title("FishC Demo")
-    top.attributes("-alpha", 0.5)
+    top.attributes("-alpha", 0.8)
 
     msg = Message(top, text="I love FishC.com")
     msg.pack()
@@ -14,4 +14,5 @@ def create():
 
 Button(root, text="创建顶级窗口", command=create).pack()
 
-mainloop()
+if __name__ == '__main__':
+    mainloop()

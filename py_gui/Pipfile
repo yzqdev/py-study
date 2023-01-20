@@ -11,10 +11,16 @@ httpx = "*"
 #qt-material = "*"
 #pyinstaller = "*"
 pillow = "*"
-#kivy = {extras = ["base"], version = "*"}
+#kivy = { extras = ["base"], version = "*" }
 easygui = "*"
 pygame = "*"
-
+colorama = "*"
+faker = "*"
+pymongo = "*"
+sqlalchemy = "*"
+psycopg2 = "*"
+sqlalchemy-utils = "*"
+retry = "*"
 [dev-packages]
 
 [requires]
