@@ -12,6 +12,8 @@ from typing import Optional
 
 from faker import Faker
 
+from utils.json_response import json_res
+
 fake = Faker()
 
 # 创建路由对象
@@ -48,7 +50,7 @@ async def add_list():
 
 
 @list_router.get("/test/{id}")
-async def test(id: int, q: Optional[str] = None):  # q不是必须的
+async def dic_t(id: int, q: Optional[str] = None):  # q不是必须的
     if q:
         return {"id": id, "q": q}
     return {"id": id}
@@ -73,8 +75,9 @@ async def dict_api():  # q不是必须的
     stu_first_keys = student.keys()
     dic_update.update(tinydict2)
     dic_list = ['a', 'b', 'c']
-    dic_from_key = dict.fromkeys(dic_list,'2211')
-    return {"dic_first": dic_first, "dic_second": student, "keys": list(stu_first_keys), 'dic_second_update': dic_update,
+    dic_from_key = dict.fromkeys(dic_list, '2211')
+    return {"dic_first": dic_first, "dic_second": student, "keys": list(stu_first_keys),
+            'dic_second_update': dic_update,
             'dic_items': student.items(), 'dicFromKey': dic_from_key}
 
 
@@ -83,6 +86,40 @@ async def dict3():  # q不是必须的
     dic_first = dict(one=1, two=2, three=3)
     tinydict = {'Name': 'Zara', 'Age': 7}
 
-
     print("Value : %s" % tinydict.keys())
-    return {'dic_first': dic_first,"keys":list(tinydict.keys())}
+    return {'dic_first': dic_first, "keys": list(tinydict.keys())}
+
+
+@list_router.get("/dictOrder")
+def dic_order():
+    from collections import OrderedDict
+    favorite_languages = OrderedDict()
+    favorite_languages['phil'] = 'python'
+    favorite_languages['jen'] = 'python'
+    favorite_languages['sarah'] = 'c'
+    favorite_languages['edward'] = 'ruby'
+
+    for name, language in favorite_languages.items():
+        print(name.title() + "'s favorite language is " + language.title() + ".")
+    return favorite_languages
+
+
+@list_router.get("/github_star")
+def github_star():
+    import httpx
+    # 执行API调用并存储响应
+    url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
+    r = httpx.get(url)
+    print("Status code:", r.status_code)
+    # 将API响应存储在一个变量中
+    response_dict = r.json()
+    print("Total repositories:", response_dict['total_count'])
+    # 探索有关仓库的信息
+    repo_dicts = response_dict['items']
+    print("Repositories returned:", len(repo_dicts))
+    # 研究第一个仓库
+    repo_dict = repo_dicts[0]
+    print("\nKeys:", len(repo_dict))
+    for key in sorted(repo_dict.keys()):
+        print(key)
+    return json_res(200, "success", response_dict)

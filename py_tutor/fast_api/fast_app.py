@@ -18,6 +18,7 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
+from fast_api.api.controller.chart_controller import chart_route
 from fast_api.api.controller.time_controller import time_router
 
 app = FastAPI()
@@ -33,6 +34,7 @@ app.include_router(user_router, prefix='/user', tags=['检索词联想', ])
 app.include_router(list_router, prefix='/list', tags=['列表', ])
 app.include_router(fun_router, prefix='/fun', tags=['函数', ])
 app.include_router(time_router, prefix='/time', tags=['日期', ])
+app.include_router(chart_route,prefix="/chart",tags=["图标"])
 port = 9600
 
 

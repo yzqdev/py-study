@@ -11,6 +11,7 @@
 from fastapi import APIRouter
 
 from crawel import github520
+from utils.json_response import json_res
 
 fun_router = APIRouter()
 
@@ -38,10 +39,11 @@ async def fun_a():
     person_info_var('小萌', 21, 'beijing')
     print('------------带5个可变参数----------------')
     person_info_var('小萌', 21, 'beijing', 123, 'shanghai', 'happy')
-    return {
+    data= {
         "person": person_info_var('嘻嘻'),
         'per_info': per_info('小智', 1002, 城市=other['城市'], 爱好=other['爱好'])
     }
+    return  json_res(200,"success",data)
 
 
 @fun_router.get("/tutor")
