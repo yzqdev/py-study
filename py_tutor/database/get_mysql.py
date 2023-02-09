@@ -44,7 +44,7 @@ Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
 
 
-def main():
+def mysql_db():
     # 创建session对象:
     session = DBSession()
 
@@ -72,6 +72,3 @@ def main():
     # 关闭Session:
     session.close()
 
-
-if __name__ == "__main__":
-    main()

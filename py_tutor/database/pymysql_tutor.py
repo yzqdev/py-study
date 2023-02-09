@@ -84,8 +84,5 @@ def update_employee():
         # 发生错误时回滚
         connection.rollback()
     finally:
-        connection.close();
+        connection.close()
 
-
-if __name__ == "__main__":
-    search_employee()

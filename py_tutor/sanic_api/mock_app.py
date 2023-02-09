@@ -8,24 +8,27 @@
 @file: mock_app.py
 @time: 2023/1/5 13:25
 """
-import os
 
-from colorama import Back, Fore
+from colorama import Fore
 from sanic import Sanic
 from sanic.response import json, text
 
+from sanic_api.db_api import db_api
 from sanic_api.cat_api import bp
 
 app = Sanic("MyHelloWorldApp")
 app.blueprint(bp)
+app.blueprint(db_api)
 swagger_ui_configuration = {
-        "validatorUrl": None,  # Disable Swagger validator
-        "displayRequestDuration": True,
-        "docExpansion": "none",  # 或者full
+    "validatorUrl": None,  # Disable Swagger validator
+    "displayRequestDuration": True,
+    "docExpansion": "none",  # 或者full
 
-    }
+}
 app.config.SWAGGER_UI_CONFIGURATION = swagger_ui_configuration
-app.config.OAS_UI_DEFAULT="swagger"
+app.config.OAS_UI_DEFAULT = "swagger"
+
+
 @app.get("/")
 async def hello_world(request):
     return text("Hello, world.")
@@ -34,6 +37,7 @@ async def hello_world(request):
 @app.get("/json")
 async def get_json(request):
     return json({"code": 200, "message": "清清楚楚", "data": request.args})
+
 
 async def handler(request):
     return text("OK")

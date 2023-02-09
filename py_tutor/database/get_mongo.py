@@ -15,7 +15,7 @@ import uuid
 
 import bson
 import pymongo
-import util
+import database.util
 from colorama import Back, Fore, Style
 from faker import Faker
 from random_word import RandomWords
@@ -104,6 +104,6 @@ def create_post():
     print(Fore.YELLOW + str(posts.count_documents({})))
 
 
-if __name__ == "__main__":
+def create_pydb():
     create_post()
     create_user()
