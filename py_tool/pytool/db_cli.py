@@ -9,6 +9,7 @@
 @time: 2023/2/12 23:59
 """
 import click
+import colorama
 from click.core import Command
 
 """
@@ -23,6 +24,7 @@ def db() -> Command:
     初始化数据库
 
     """
+
     pass
 
 
