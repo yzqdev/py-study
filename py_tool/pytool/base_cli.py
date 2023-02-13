@@ -11,19 +11,23 @@
 import click
 from rich.console import Console
 
-console = Console()
-from pytool import db_cli
+
+from pytool import db_cli, file_cli
 from colorama import Fore
 
+console = Console()
 @click.group()
 def cli():
     pass
+
+
 @cli.command()
 def c():
-    print(f"{ Fore.CYAN}颜色字符")
+    print(f"{Fore.CYAN}颜色字符")
     console.print("Hello", "World!")
     console.print("Hello", "World!", style="bold red")
     console.print("Where there is a [bold cyan]Will[/bold cyan] there [u]is[/u] a [i]way[/i].")
+
 
 @cli.command()
 @click.option('--count', default=1, help='Number of greetings.')
@@ -36,3 +40,4 @@ def main(count, name):
 
 
 cli.add_command(cmd=db_cli.db)
+cli.add_command(cmd=file_cli.file_cli)
