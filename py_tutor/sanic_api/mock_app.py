@@ -13,8 +13,8 @@ from colorama import Fore
 from sanic import Sanic
 from sanic.response import json, text
 
-from sanic_api.db_api import db_api
 from sanic_api.cat_api import bp
+from sanic_api.db_api import db_api
 
 app = Sanic("MyHelloWorldApp")
 app.blueprint(bp)

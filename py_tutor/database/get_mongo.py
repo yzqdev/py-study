@@ -15,11 +15,11 @@ import uuid
 
 import bson
 import pymongo
-import database.util
 from colorama import Back, Fore, Style
 from faker import Faker
 from random_word import RandomWords
 
+import database.util
 from database import constants
 
 fake = Faker(locale='zh_CN')

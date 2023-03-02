@@ -19,7 +19,7 @@ class Index:
     def __init__(self):
         print('program started')
 
-    def search(lines, pattern, history=5):
+    def search(self, lines, pattern, history=5):
         previous_lines = deque(maxlen=history)
         for line in lines:
             if pattern in line:

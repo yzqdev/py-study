@@ -8,7 +8,7 @@
 @file: openapi.py
 @time: 2023/1/17 2:13
 """
-from flask import Flask, Blueprint
+from flask import Blueprint, Flask
 
 app = Flask(__name__)
 

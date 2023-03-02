@@ -8,13 +8,15 @@
 @file: chart_controller.py
 @time: 2023/1/22 16:06
 """
-import colorama
-import pygal
- 
-from fastapi import APIRouter
-from pygal.style import LightColorizedStyle as LCS, LightenStyle as LS
-import httpx
 from operator import itemgetter
+
+import colorama
+import httpx
+import pygal
+from fastapi import APIRouter
+from pygal.style import LightColorizedStyle as LCS
+from pygal.style import LightenStyle as LS
+
 chart_route = APIRouter()
 
 

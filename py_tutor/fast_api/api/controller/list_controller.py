@@ -107,6 +107,7 @@ def dic_order():
 @list_router.get("/github_star")
 def github_star():
     import httpx
+
     # 执行API调用并存储响应
     url = 'https://api.github.com/search/repositories?q=language:python&sort=stars'
     r = httpx.get(url)
